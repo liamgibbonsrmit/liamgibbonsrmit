@@ -1,0 +1,103 @@
+/* General Style Information */
+
+body {
+    background-color: #517A4E;
+    font-family: 'Hina Mincho', serif;;
+}
+
+.row{
+    width:720px;
+    margin: 10px auto 10px auto;
+}
+
+.image-container {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 20px;
+}
+
+/* Animation Information */
+
+.rotate-center:hover
+{
+    -webkit-animation:rotate-center .6s ease-in-out both;
+    animation:rotate-center .6s ease-in-out both
+}
+
+ @-webkit-keyframes rotate-center{
+     0% {
+         -webkit-transform:rotate(0);
+         transform:rotate(0)
+        }
+        100% {
+            -webkit-transform:rotate(360deg);
+            transform:rotate(360deg)
+        }
+    }
+    @keyframes rotate-center
+    {
+        0% {
+            -webkit-transform:rotate(0);
+            transform:rotate(0)
+        }
+        100%{
+            -webkit-transform:rotate(360deg);
+            transform:rotate(360deg)
+        }
+    }
+
+/* Image Style Information */
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+/* Text Style Information */
+
+h1 {
+    color: #A5FBA0;
+    text-align: center;
+    font-style: oblique;
+    font-size: 50px;
+}
+
+h2 {
+    color: #A5FBA0;
+    text-align: left;
+    font-style: oblique;
+    font-size: 40px;
+}
+
+p {
+    color: #A5FBA0;
+    font-size: 20px;
+}
+
+a {
+    font-size: 20px;
+}
+
+a:link, a:visited {
+    color:#A5FBA0;
+}
+
+a:hover {
+    color: #256422;
+}
+
+a:active {
+    color: #b3fdaf;
+}
+
+/* Breakpoint */
+
+@media only screen and (max-width: 600px)
+{
+    body {
+        background-color: skyblue;
+    }
+}
+
